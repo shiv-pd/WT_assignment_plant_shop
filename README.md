@@ -1,7 +1,7 @@
 # Plant Shop - Java Web Application
 **Plant Shop** is a simple e-commerce web application that allows users to explore and buy various types of plants. It is built using **Java Servlets**, **JSP**, and **MySQL**.
 
-This project follows the **MVC architecture** and is designed as a beginner-friendly full-stack Java web app.
+This project follows the **MVC architecture** and is designed as a full-stack Java web app.
 
 ---
 
