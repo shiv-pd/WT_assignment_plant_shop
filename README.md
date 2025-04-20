@@ -7,27 +7,34 @@ This project follows the **MVC architecture** and is designed as a full-stack Ja
 
 ## Screenshots
 
-### Login Page
-![Login Page](Screenshots/Plant-shop-Login(1).png)
 
 ###  Home Page
 ![Home Page](web/assets/Screenshots/Plant-Shop-home.png)
 
+
+
 ###  Product Listing
-![Products](Screenshots/Plant-Shop.png)
+![Products](web/assets/Screenshots/Plant-Shop.png)
 
-### Product Registration
-![Products](screenshots/cart.png)
 
-### Profile
-![Profile](Screenshots/Profile.png)
-
-### My Products
-![My Products](Screenshots/Profile(1).png)
 
 ### Specific Products
-![Specific Products](Screenshots/Specific-product.png)
+![Specific Products](web/assets/Screenshots/Specific-product.png)
 
 ### Product Form
-![Product Form](Screenshots/Product-Form.png)
+![Product Form](web/assets/Screenshots/Product-Form.png)
+
+
+### Profile
+![Profile](web/assets/Screenshots/Profile(2).png)
+
+### My Products
+![My Products](web/assets/Screenshots/Profile(1).png)
+
+
+### Login Page
+![Login Page](web/assets/Screenshots/Plant-shop-Login.png)
+
+### Product Registration
+![Products](web/assets/Screenshots/Registration.png)
 
