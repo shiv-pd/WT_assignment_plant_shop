@@ -11,7 +11,7 @@ This project follows the **MVC architecture** and is designed as a full-stack Ja
 ![Login Page](Screenshots/Plant-shop-Login(1).png)
 
 ###  Home Page
-![Home Page](Screenshots/Plant-Shop-home.png)
+![Home Page](web/assets/Screenshots/Plant-Shop-home.png)
 
 ###  Product Listing
 ![Products](Screenshots/Plant-Shop.png)
