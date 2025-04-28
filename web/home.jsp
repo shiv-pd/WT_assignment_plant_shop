@@ -24,7 +24,7 @@
         <ul class="sm:flex sm:justify-around hidden items-center">
              <li class="px-4 "><a href="home">Home</a></li>
              <li class="mx-4"><a href="products">Products</a></li>
-             <li class="mx-4"><a href="#">cart</a></li>
+             <li class="mx-4"><a href="cartItems.jsp"><i class="fa-solid fa-cart-shopping opacity-60 hover:opacity-90"></i></a></li>
              
              <% 
                 String userName = (String) session.getAttribute("username");
@@ -46,7 +46,7 @@
     <ul id="small-list" class="bg-gray-100 text-xl w-full py-4 hidden sm:hidden ">
         <li class="py-2 px-8 hover:bg-amber-50"><a href="home">Home</a></li>
         <li class="py-2 px-8 hover:bg-amber-50"><a href="products">Products</a></li>
-        <li class="py-2 px-8 hover:bg-amber-50"><a href="#">cart</a></li>
+        <li class="py-2 px-8 hover:bg-amber-50"><a href="cartItems.jsp"><i class="fa-solid fa-cart-shopping opacity-60 hover:opacity-90"></i></a></li>
          <% 
                 if(userName != null){
          %>
@@ -103,7 +103,7 @@
     </div>
 
      <div class="bg-gray-100 flex justify-center flex-wrap gap-4 sm:gap-8 md:gap-18 md:pt-20 lg:gap-24 p-8 md:p-10 lg:mx-20  lg:rounded-2xl">
-        <img class="w-70 rounded-2xl lg:w-90" src="./assets/bringing-nature-close.jpg" alt="">
+        <img class="w-70 rounded-2xl lg:w-90 transition-transform duration-300 hover:scale-120 " src="./assets/bringing-nature-close.jpg" alt="">
         <div class=" flex flex-col gap-4 ml-2 justify-center ">
             <p class="font-semibold  mb-[-0.5rem] lg:text-xl">About us</p>
             <p class="text-3xl font-semibold lg:text-[40px]  ">Bringing nature closer <br> to your doorstep</p>

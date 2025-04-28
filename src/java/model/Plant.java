@@ -9,6 +9,7 @@ public class Plant {
     private String description;
     private String image_name;
     private String base64Image; 
+    private int quantityInCart;
 
     public Plant(int id, String name,String category, double price, int total_stock ,String description,  String image_name, String base64Image) {
         this.id = id;
@@ -38,13 +39,19 @@ public class Plant {
         this.base64Image = base64Image;
     }
     
+     public Plant(int id, String name,String category , int total_stock ,double price,int quantityInCart, String base64Image, String description) {
+         this.id = id;
+        this.name = name;  
+        this.category = category;      
+        this.total_stock = total_stock;
+        this.price = price;
+        this.quantityInCart = quantityInCart;
+        this.base64Image = base64Image;
+        this.description= description;
+    }
     
-//    rs2.getString("name"),
-//                        rs2.getDouble("price"),
-//                        rs2.getInt("total_stock"),
-//                        rs2.getString("image_name"),                       
-//                        base64Image
-    
+
+     
     public int getId() { return id; }
     public String getName() { return name; }
     public String getCategory() { return category; }
@@ -53,15 +60,7 @@ public class Plant {
     public String getDescription() { return description; }
     public String getImageName() { return image_name; }
     public String getBase64Image() { return base64Image; }
+    public int getQuantityInCart() { return quantityInCart; }
     
-//     @Override
-//    public String toString() {
-//        return "Plant{" +
-//                "id=" + id +
-//                ", name='" + name + '\'' +
-//                ", category='" + category + '\'' +
-//                ", price=" + price +
-//                ", image='" + image + '\'' +
-//                '}';
-//    }
+    
 }

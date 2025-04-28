@@ -26,7 +26,7 @@
             <ul class="sm:flex sm:justify-around hidden items-center">
                 <li class="px-4 "><a href="home">Home</a></li>
                 <li class="mx-4"><a href="products">Products</a></li>
-                <li class="mx-4"><a href="#">cart</a></li>
+                <li class="mx-4"><a href="cartItems.jsp"><i class="fa-solid fa-cart-shopping opacity-60 hover:opacity-90"></i></a></li>
                     <%
                         String userName = (String) session.getAttribute("username");
                         Integer userId = (Integer) session.getAttribute("user_id");
@@ -47,7 +47,7 @@
         <ul id="small-list" class="bg-gray-100 text-xl w-full py-4 hidden sm:hidden ">
             <li class="py-2 px-8 hover:bg-amber-50"><a href="home">Home</a></li>
             <li class="py-2 px-8 hover:bg-amber-50"><a href="products">Products</a></li>
-            <li class="py-2 px-8 hover:bg-amber-50"><a href="#">cart</a></li>
+            <li class="py-2 px-8 hover:bg-amber-50"><a href="cartItems.jsp"><i class="fa-solid fa-cart-shopping opacity-60 hover:opacity-90"></i></a></li>
                 <%
                     if (userName != null) {
                 %>

@@ -24,7 +24,7 @@
             <ul class="sm:flex sm:justify-around hidden items-center">
                 <li class="px-4 "><a href="home">Home</a></li>
                 <li class="mx-4"><a href="products">Products</a></li>
-                <li class="mx-4"><a href="#">Cart</a></li>
+                <li class="mx-4"><a href="cartItems.jsp"><i class="fa-solid fa-cart-shopping opacity-60 hover:opacity-90"></i></a></li>
                     <%
                         String userName = (String) session.getAttribute("username");
                         if (userName != null) {
@@ -43,7 +43,7 @@
         <ul id="small-list" class="bg-gray-100 text-xl w-full py-4 hidden sm:hidden  mb-8 ">
             <li class="py-2 px-8 hover:bg-amber-50"><a href="home">Home</a></li>
             <li class="py-2 px-8 hover:bg-amber-50"><a href="products">Products</a></li>
-            <li class="py-2 px-8 hover:bg-amber-50"><a href="#">Cart</a></li>
+            <li class="py-2 px-8 hover:bg-amber-50"><a href="cartItems.jsp"><i class="fa-solid fa-cart-shopping opacity-60 hover:opacity-90"></i></a></li>
                 <%
                     if (userName != null) {
                 %>
@@ -145,8 +145,13 @@
 
 
                     </form>
-                    <button class="bg-amber-300 hover:bg-amber-400  rounded-3xl py-3 px-5">buy now</button>
-
+                        <form id="buyNowForm"  action="buyServlet" method="post" >
+                             <input type="hidden" name="productId" value="<%= p.getId()%>" />
+                             <input type="hidden" name="userId" value="<%= userId%>" />
+                                     
+                             <button  type="submit" class="bg-amber-300 hover:bg-amber-400  rounded-3xl py-3 px-5">buy now</button>
+ 
+                        </form>
                 </div>
             </div>
         </div>
@@ -171,7 +176,7 @@
            
                 const userId = document.body.dataset.userId;
                 const addToCartForm = document.getElementById("addToCartForm");
-
+                const buyNowForm = document.getElementById("buyNowForm");
               
 
                 addToCartForm.addEventListener("submit", function(e) {
@@ -184,8 +189,22 @@
                         
                         
                     }});
-                });
+                
+                  buyNowForm.addEventListener("submit", function(e) {
+                    if (!userId || userId === "null") {
+                        e.preventDefault(); 
+                        alert("Please log in first to buy the item.");
+
+                        
+                        window.location.href = `login.jsp`;
+                        
+                        
+                    }});
                
+                });
+
+    
+              
        
         </script>
     </body>
