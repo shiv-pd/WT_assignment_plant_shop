@@ -5,11 +5,11 @@
 
 <servlet-mapping>
     <servlet-name>HomeServlet</servlet-name>
-    <url-pattern>/home</url-pattern>   <!-- ONLY /home -->
+    <url-pattern>/home</url-pattern> <!-- NOT /plant_shop/home -->
 </servlet-mapping>
 
 <welcome-file-list>
-    <welcome-file>home.jsp</welcome-file>  <!-- or index.html -->
+    <welcome-file>home.jsp</welcome-file> <!-- or index.html -->
 </welcome-file-list>
 
 <servlet>
